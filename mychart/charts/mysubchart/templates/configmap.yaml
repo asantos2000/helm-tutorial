@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-cfgmap2
+  labels: 
+    {{- include "mychart.app" . | nindent 4 }}
+data:
+  dessert: {{ .Values.dessert }}
+  salad: {{ .Values.global.salad }}

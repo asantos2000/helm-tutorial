@@ -1,0 +1,4 @@
+mushrooms
+cheese
+peppers
+onions
